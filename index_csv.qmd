@@ -1,0 +1,566 @@
+---
+title: "Análisis de colaboración en comunidades por medio de analisis de redes sociales"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/lettering_black.svg
+    footer: Esta charla está en <> 
+---
+
+
+
+# Comunidades de práctica
+
+> Grupo de personas que **comparten una  
+pasión** por algo que saben **como 
+hacer**, y que **interactúan regularmente** 
+con el objetivo de **aprender como hacerlo mejorr** -- _Etienne Wenger_
+
+## Analisis de redes sociales
+
+Grupo de individuos que se relacionan con otros para un fin determinado, caracterizado por la existencia de flujos de información.
+
+![](images/red_1.svg)
+
+::: {.notes}
+Here is where Social Networks Analysis comes into play. I'm not talking about twitter or instagram here, I'm talking about networks build by individuals u organization that have some kind of relationship.
+:::
+
+
+## rOpenSci {.smaller}
+
+somos un grupo de gente cuya pación es __la investigaci{on abierta y reproducible__ para todes, construida por todes. Sabemos como hacer esto y lo hacemos creando __infraestructura técnica y social__. 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+::: {.incremental}
+- Creando y manteniendo un Conjunto de herramientas de software en R cuidadosamente revisadas.
+- Haciendo que los datos, herramientas y mejores prácticas sean más sencillas de encontrar.
+- Nutriendo una comunidad amigable y diversa.
+- Desarrollando la capacidad de usuaries y desarrolladores de software y fomentando un sentido de orgullo por su trabajo. 
+- Promoviendo la defensa de una cultura de intercambio de datos y software reutilizable.
+:::
+:::
+
+::: {.column width="40%"}
+![](images/computadora_dos.png) 
+:::
+
+::::
+
+::: footer
+<https://ropensci.org>
+:::
+
+::: {.notes}
+We do this creating a suite of carefully vetted, federated R software tools. Developers of research software send their package to our review process, and after they pass, the package is part of our suite. Developers get support on from our staff and from the community. Users get high quality software to do science.
+
+Making the right data, tools and best practices more discoverable. Our R-Universe platform allows to publish and search more than 18000 R packages. 
+
+Welcoming and diverse community through a code of conduct, our Champions Program and our multilingual publishing efforts. 
+
+Building capacity of software users and developers and fostering a sense of pride in their work with the projets I already mention, but also by publishing online books, organizing community call and co-working session, higlighing developer with interviews and creating contect on our web pages, forum and newsletter.
+:::
+
+
+## Community Manager
+
+:::: {.columns}
+
+::: {.column width="50%"}
+> **Facilita** las **actividades** de una comunidad y las **interacciones** entre **las personas que son parte de la comunidad.** 
+Community management may be considered as _“in-reach”_ rather than _“outreach”_ or public engagement. - CSCCE
+
+:::
+
+::: {.column width="50%"}
+![](images/skills.svg) 
+:::
+
+::::
+
+
+::: footer
+Aprender más: [What is Community Engagement Within Science?](https://www.cscce.org/about/community-engagement/), [What does a scientific community manager do?](https://www.cscce.org/2021/01/25/what-does-a-scientific-community-manager-do-check-out-the-cscce-skills-wheel-and-accompanying-guidebook/)
+:::
+
+::: {.notes}
+A community manager in the context of a community of practice is a person that facilitates the activities of a community and the interaction with their members.  Have responsabilities in task in technical, interpersonal, communication, program management and program development aspect.
+:::
+
+# Vamos a analizar la comunidad de rOpenSci
+
+# ¿Por qué analizar nuestra comunidad? 
+
+![](images/question_dos.png){.r-stretch}
+
+::: {.notes}
+essentially because by knowing your community you can do a better job in the role of community manager. rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. This are very useful and show us an overal idea of our community and our activities.
+:::
+
+
+## 
+
+Las comunidades están __construidas en conexiones__. 
+
+. . .
+
+Necesitamos conocer la conectividad de nuestra comunidad para __planificar intervneciones enfocadas y efectivas__ con el objetivo de:
+
+::: {.incremental}
+- mejorar las colaboraciones.
+- mejorar los flujos de información.
+- incrementar el re uso de conocimiento.
+- generar la cocreación efectiva de conocimiento.
+- generar una transferencia efectiva de conocimiento.
+:::
+
+
+::: {.notes}
+Now, communities are built on connections, and those summaries and number don't give us many information about  the growth and strength of professional interpersonal connections in our community. 
+:::
+
+## 
+
+### En un momento dado
+
+::: {.incremental}
+- quién está conectado con quien? Quién no está conectado?
+- Dónde están y quienes son los __hubs__?
+- Dónde estány sobre qué son los __clusters__? Hay __silos__?
+:::
+
+### Como cambia a través del tiempo
+
+::: {.incremental}
+- Se generan nuevas __conecciones__ ?
+- Se forman nuevos __patrones__ de conectividad?
+- Como era nuestra red __antes y después __ de introducir una actividad?
+:::
+
+::: {.notes}
+We will try to answer questions like:
+:::
+
+# Como podemos analizar la conectividad de nuestra comunidad?
+
+![](images/coneccion_dos.png){.r-stretch}
+
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_2.svg){.r-stretch}
+
+---
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_3.svg){.r-stretch}
+---
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_4.svg){.r-stretch}
+
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full.svg){.r-stretch}
+
+::: {.notes}
+You can map the nodes and edges to explore the connections and patterns that exist
+and make conclusions based off of that exploration, for example, here we have map network, with the people as nodes and the edges as collaborations, for example, write a blog post together, being co-authors.
+
+:::
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_degree.svg){.r-stretch}
+
+::: {.notes}
+The degree of a node is how many connection have, for example this node has 6 connection, so the degree is 6.  This other have 5 connections so the degree is 5. higer degree, more connected is the node.
+
+:::
+
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_multiplexity.svg){.r-stretch}
+
+::: {.notes}
+The multiplexity show the number of connection between two nodes, for example
+you co-author more than one blog post.
+
+:::
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_centrality.svg){.r-stretch}
+
+::: {.notes}
+Betweenness centrality measures the number of times a node lies on the shortest path between other nodes. What it tells us: This measure shows which nodes are 'bridges' between nodes in a network.
+
+:::
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_closeness.svg){.r-stretch}
+
+::: {.notes}
+Scores each node based on how close it is to all other nodes in the network.
+It is useful for finding the individuals who are best placed to influence the entire network most quickly.
+:::
+
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_clusters.svg){.r-stretch}
+
+::: {.notes}
+Clusters or communities are groups that work together, their nodes have high number of connection between them. A clique cluster have all thier memebers interconected and a silo don't have connection with other clusters on the network.
+
+:::
+
+# How we can collect the data?
+
+![](images/charlando.png){.r-stretch}
+
+::: {.notes}
+For this type of analysis we need data that reveal some kind of connection between the actors in a network.
+
+The most common data collection methods used in social network analysis are surveys and interviews collect from members in the network. As you can imagine, this can be costly in time and money.  
+
+The data also could come from existing data, like data on social
+media connections, and it can come from your own knowledge of the relationships that exist in the network.
+
+So we thought, is it possible that we already have that data in another format and we can accommodate it to analyze the connectivity of our community? is it possible that we could collect that data in an automated or semi-automated way to repeat the analysis?
+
+:::
+
+## Path to contribute at rOpenSci {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![](images/escribiendo.png){height="180" fig-align="center"}
+
+Write a blog post
+
+
+
+![](images/telescopio.png){.fragment height="180" fig-align="center"}
+
+Review a package
+:::
+
+::: {.column width="33%"}
+
+![](images/engranajes.png){.fragment height="180" fig-align="center"}
+
+Maintain a package
+
+![](images/hablar.png){.fragment height="180" fig-align="center"}
+
+Speak at a Comm Call 
+
+:::
+
+::: {.column width="33%"}
+![](images/champion.png){.fragment height="180" fig-align="center"}
+
+Become a champion
+
+![](images/idea.png){.fragment height="180" fig-align="center"}
+
+Host a coworking session
+
+:::
+
+::::
+
+::: footer
+Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensci.org/) and [How to Participate with rOpenSci](https://ropensci.org/blog/2022/09/13/contributing-ropensci/)
+:::
+
+::: {.notes}
+Fortunately at rOpenSci we have a contribution guide, there is a whole book describing the different ways you can contribute to the community. For example, you can, Write a blog post, Review a package, Maintain a package, Speak at a Community Call, Become a champion, Host a coworking session. 
+
+Many of these forms of contribution can be made with other people and there we have our nodes and a connection between them.
+:::
+
+
+## Contributions in a network {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![](images/escribiendo.png){height="180" fig-align="center"}
+
+N:author. E:coauthorship
+
+
+
+![](images/telescopio.png){height="180" fig-align="center"}
+
+N:author, editor, reviewer. E:peer-review
+:::
+
+::: {.column width="33%"}
+
+![](images/engranajes.png){height="180" fig-align="center"}
+
+N:developer. E:codevelopment.
+
+![](images/hablar.png){height="180" fig-align="center"}
+
+N:speaker. E:cospeaking, coorganization
+
+:::
+
+::: {.column width="33%"}
+![](images/champion.png){height="180" fig-align="center"}
+
+N:mentor, mentee. E:mentorship
+
+![](images/idea.png){height="180" fig-align="center"}
+
+N:participants. E: coorganization, coattendence
+
+:::
+
+::::
+
+::: footer
+
+:::
+
+## Data for the network {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![](images/escribiendo.png){height="180" fig-align="center"}
+
+Webpage
+
+
+
+![](images/telescopio.png){height="180" fig-align="center"}
+
+GitHub, database
+:::
+
+::: {.column width="33%"}
+
+![](images/engranajes.png){height="180" fig-align="center"}
+
+GitHub,r-universe
+
+![](images/hablar.png){height="180" fig-align="center"}
+
+Webpage
+
+:::
+
+::: {.column width="33%"}
+![](images/champion.png){height="180" fig-align="center"}
+
+Webpage, database
+
+![](images/idea.png){height="180" fig-align="center"}
+
+Webpage
+
+:::
+
+::::
+
+::: footer
+
+:::
+
+## Let's see an example with the Blog
+
+![](images/yaml.png){fig-align="center"}
+
+## Let's see an example with the Blog  {.smaller}
+
+```{.r code-line-numbers="|1,2,3,4|6,7,8,9,10|12|13|14,15,16,17,18,19,20|23"}
+file_list <- fs::dir_ls(path = "content/blog/", 
+                        recurse = TRUE, 
+                        type = "file", 
+                        glob = "*.md") 
+
+datos <- tibble(fecha = character(), 
+                titulo = character(),
+                autor = character(), 
+                year = character(), 
+                contribution_type = character())
+                
+for (documento in file_list){ 
+  doc <- rmarkdown::yaml_front_matter(input = file.path(documento)) 
+  datos <- tibble::add_row(datos, 
+                           fecha = doc$date, 
+                           titulo = doc$title, 
+                           autor = doc$author, 
+                           year = as.character(year(date(doc$date))), 
+                           contribution_type = 'blog post' 
+                           )  
+}
+
+write_csv(datos, "blog_post_authors_2023.csv") # ;-)                
+
+```
+::: {.notes}
+1. Read all the files in the `content/blog/` folder with the `.md` extension  
+2. Create a tibble with the variables to store: _date, title, author, year_ and _contribution_type_.
+3. For each markdown document
+4. Read the YAML header, extract the value of each variable
+5. and add a row in the dataset with the information
+6. After process all the documents, we save the dataset to a CSV file ;-)
+:::
+
+
+## Let's see an example with the Blog
+
+![](images/network.png){height="350" fig-align="center"}
+
+``` {.r code-line-numbers="|1|2|3|4|5"}
+results <- datos |> 
+  group_by(titulo, year) |>
+  filter(n() > 1) |> 
+  summarise(as.data.frame(t(combn(autor, 2)))) |>
+  select(titulo, year, from=V1, to=V2)
+
+```
+::: {.notes}
+the next step is to transform the list of author of each blog post in a table with network format.
+
+This code take the list we create in the previws step. Group by tile and year and keep all the blog post that have two authors or more.  Then, for each group, the combn function create a matrix with two rows and columns representing all the unique combination of two authors. We transpose this data to get two columns that become _from_ and _to_, epresenting the nodes.
+:::
+
+
+## Blog-Post full network 2013-2023 
+
+![](images/full_blog_post.png){fig-align="center"} 
+
+
+##  We can analyze it annually 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/blog_post_2014.png){height="500" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](images/blog_post_2022.png){height="500" fig-align="center"}
+:::
+
+::::
+
+::: {.notes}
+We can also have a network for each year and see how the model changes over time. Now we also add the name of the author to the node.
+:::
+
+## All contribution together {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](images/full_network.png){height="600" fig-align="center"}
+:::
+
+::: {.column width="40%"}
+![](images/champions.png){height="200" fig-align="center"}
+Champions first co-hort
+
+![](images/runiverse_starts_teams.png){height="200" fig-align="center"}
+
+R-universe Stars Interview Team
+:::
+
+::::
+
+::: {.notes}
+Tell me with you hang out and i will tell you who you are ;-)
+
+We can also identify network members characteristics, like Maëlle Salmon have the max of contributions as active member and Noam Ross have the higest degree and the higest centrality. It is the most connected member.
+Laura DeCicco have the higest degree and it is not a staff member and Kara Woo have the higest centrality.
+I have the max of contribution in other language than English, and Ale Bellini y Lucio Casalla have max contribution in other language than English, and aren't staff members.
+
+:::
+
+
+## What if you wanted to do the same for your community?
+
+
+![](images/leer.png){.r-stretch}
+
+
+## My tips
+
+::: {.incremental}
+
+* Define the nodes in your network (people, countries, organizations, ...) 
+* Define the type(s) of connection you have in your network.
+    * Start with your paths for contributions.
+    * Identify which contributions can be done in teams.
+* Probably you are alredy registering information about those type of connection.
+
+:::
+
+## My tips
+
+::: {.incremental}
+
+* You can automatize a portion of the data collection.
+    * Formalize the workflow (code ;-)) so you can repeat & reproduce.
+* It is hard to capture all type of interactions.
+  * Take into account open/close/privacy of the data. 
+* Knowing the nodes help to undertand the clusters and the interactions.
+  * Lean on the people who have been in the network for the longest time.
+
+:::
+
+## My tips
+
+::: {.incremental}
+
+* You can take snapshot of the network model ... 
+* ... so you can compare it at different times.
+* ... so you can use it for evaluating the impact of interventions and programs.
+* Share what you find with your community
+* ... and other community managers.
+
+:::
+
+
+## ¡Gracias, Thank you, Obrigada!{.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Slides: <https://bit.ly/csvconf2023>
+- GitHub: <https://github.com/yabellini/CSVConfv7>
+- The pictures are adaptation by my 7yo son and me to [images by Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
+- We use R, gephy, excalidraw and quarto for build this talk.
+- Thanks to the rOpenSci Staff Team, Elio, Ale and my English Conversation Club for their feedback.
+:::
+
+::: {.column width="40%"}
+![](images/hi-five.png)
+:::
+
+::::
+
+
+
+
+
+

@@ -1,0 +1,435 @@
+---
+title: "Análisis de colaboración en comunidades por medio de análisis de redes sociales"
+author: "Yanina Bellini Saibene - rOpenSci"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/lettering_black.svg
+    footer: Esta charla está en <> 
+---
+
+## Dos conceptos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### CoP
+
+> Grupo de personas que **comparten una  
+pasión** por algo que saben **como 
+hacer**, y que **interactúan regularmente** 
+con el objetivo de **aprender como hacerlo mejor** -- _Etienne Wenger_
+
+:::
+
+::: {.column width="50%"}
+
+### Redes sociales
+
+> Grupo de __individuos__ que se __relacionan__ con otros para un __fin determinado__, caracterizado por la existencia de __flujos de información__.
+
+:::
+
+::::
+
+## Análisis de redes sociales - elementos básicos
+
+![](images/red_2.svg){.r-stretch}
+
+---
+
+## Análisis de redes sociales - elementos básicos
+
+![](images/red_3.svg){.r-stretch}
+---
+
+## Análisis de redes sociales - elementos básicos
+
+![](images/red_4.svg){.r-stretch}
+
+
+## Análisis de redes sociales - elementos básicos
+
+![](images/red_full.svg){.r-stretch}
+
+## Análisis de redes sociales - medidas básicas
+
+![](images/red_full_degree.svg){.r-stretch}
+
+
+## Análisis de redes sociales - medidas básicas
+
+![](images/red_full_multiplexity.svg){.r-stretch}
+
+
+## Análisis de redes sociales - medidas básicas
+
+![](images/red_full_centrality.svg){.r-stretch}
+
+
+## Análisis de redes sociales - medidas básicas
+
+![](images/red_full_closeness.svg){.r-stretch}
+
+
+## Análisis de redes sociales - medidas básicas
+
+![](images/red_full_clusters.svg){.r-stretch}
+
+
+# ¿Por qué analizar nuestra comunidad de práctica? 
+
+![](images/question_dos.png){.r-stretch}
+
+
+## 
+
+Las comunidades están __construidas por las conexiones__ de sus integrantes. 
+
+. . .
+
+Necesitamos conocer la conectividad de nuestra comunidad para __planificar intervenciones enfocadas y efectivas__ con el objetivo de:
+
+::: {.incremental}
+- mejorar las colaboraciones.
+- mejorar los flujos de información.
+- incrementar el re uso de conocimiento.
+- fomentar una co-creación efectiva de conocimiento.
+- generar una transferencia efectiva de conocimiento.
+:::
+
+## 
+
+### Analizar un momento dado
+
+::: {.incremental}
+- ¿Quién está conectado con quien? Quién no está conectado?
+- ¿Dónde están y quienes son los __hubs__?
+- ¿Dónde están y sobre qué son los __clusters__? Hay __silos__?
+
+:::
+
+## 
+
+### Analizar un momento dado
+
+- ¿Quién está conectado con quien? Quién no está conectado?
+- ¿Dónde están y quienes son los __hubs__?
+- ¿Dónde están y sobre qué son los __clusters__? Hay __silos__?
+
+### o como cambia a través del tiempo
+
+::: {.incremental}
+- ¿Se generan nuevas __conecciones__ ?
+- ¿Se forman nuevos __patrones__ de conectividad?
+- ¿Cómo era nuestra red __antes y después __ de introducir una actividad?
+:::
+
+# Vamos a analizar la comunidad de rOpenSci
+
+Somos un grupo de gente cuya pasión es __la investigación abierta y reproducible__ para todes, construida por todes. Sabemos sobre este tema y contribuimos a este objetivo creando __infraestructura técnica y social__. 
+
+
+## Participar de rOpenSci {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![](images/escribiendo.png){height="180" fig-align="center"}
+
+Escribir para el blog
+
+
+
+![](images/telescopio.png){.fragment height="180" fig-align="center"}
+
+Revisar un paquete
+:::
+
+::: {.column width="33%"}
+
+![](images/engranajes.png){.fragment height="180" fig-align="center"}
+
+Mantener un paquete
+
+![](images/hablar.png){.fragment height="180" fig-align="center"}
+
+Hablar en una Comm Call 
+
+:::
+
+::: {.column width="33%"}
+![](images/champion.png){.fragment height="180" fig-align="center"}
+
+Convertirte en campeón/a
+
+![](images/idea.png){.fragment height="180" fig-align="center"}
+
+Ser anfitrión de un encuentro
+
+:::
+
+::::
+
+::: footer
+[Guía para contribuir de rOpenSci](https://contributing.ropensci.org/) and [Cómo participar en](https://ropensci.org/es/blog/2022/09/13/contributing-ropensci-es/)
+:::
+
+## Participación en una red {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![](images/escribiendo.png){height="180" fig-align="center"}
+
+N:autor. E:coautoría
+
+
+
+![](images/telescopio.png){height="180" fig-align="center"}
+
+N:autor, editar, revisar. E:peer-review
+:::
+
+::: {.column width="33%"}
+
+![](images/engranajes.png){height="180" fig-align="center"}
+
+N:desarrollo. E:co desarrollo.
+
+![](images/hablar.png){height="180" fig-align="center"}
+
+N:disertante. E:panel, coorganización
+
+:::
+
+::: {.column width="33%"}
+![](images/champion.png){height="180" fig-align="center"}
+
+N:tutores, mentoreade. E:mentorías
+
+![](images/idea.png){height="180" fig-align="center"}
+
+N:participantes. E: coorganización, asistentes
+
+:::
+
+::::
+
+::: footer
+
+:::
+
+## Datos para la red {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![](images/escribiendo.png){height="180" fig-align="center"}
+
+Webpage
+
+
+
+![](images/telescopio.png){height="180" fig-align="center"}
+
+GitHub, base de datos
+:::
+
+::: {.column width="33%"}
+
+![](images/engranajes.png){height="180" fig-align="center"}
+
+GitHub,r-universe
+
+![](images/hablar.png){height="180" fig-align="center"}
+
+Webpage
+
+:::
+
+::: {.column width="33%"}
+![](images/champion.png){height="180" fig-align="center"}
+
+Webpage, base de datos
+
+![](images/idea.png){height="180" fig-align="center"}
+
+Webpage
+
+:::
+
+::::
+
+::: footer
+
+:::
+
+## Un ejemplo con el blog
+
+![](images/yaml.png){fig-align="center"}
+
+## Veamos un ejemplo  {.smaller}
+
+```{.r code-line-numbers="|1,2,3,4|6,7,8,9,10|12|13|14,15,16,17,18,19,20|23"}
+file_list <- fs::dir_ls(path = "content/blog/", 
+                        recurse = TRUE, 
+                        type = "file", 
+                        glob = "*.md") 
+
+blog_post <- tibble(fecha = character(), 
+                titulo = character(),
+                autor = character(), 
+                year = character(), 
+                contribution_type = character())
+                
+for (documento in file_list){ 
+  doc <- rmarkdown::yaml_front_matter(input = file.path(documento)) 
+  blog_post <- tibble::add_row(blog_post, 
+                           fecha = doc$date, 
+                           titulo = doc$title, 
+                           autor = doc$author, 
+                           year = as.character(year(date(doc$date))), 
+                           tipo_contribucion = 'blog post' 
+                           )  
+}
+
+write_csv(datos, "blog_post_authors_2023.csv") # ;-)                
+
+```
+::: {.notes}
+1. Lee todos los archivos de la carpeta `content/blog/` con extensión `.md`  
+2. Crea un tibble con las variables a almacenar: _fecha, título, autor, año_ y _tipo_contribución_.
+3. Para cada documento markdown
+4. Lee la cabecera YAML, extrae el valor de cada variable
+5. y añadir una fila en el conjunto de datos con la información
+
+:::
+
+
+## Veamos un ejemplo
+
+![](images/network.png){height="350" fig-align="center"}
+
+``` {.r code-line-numbers="|1|2|3|4|5"}
+blog_post_net <- blog_post |> 
+  group_by(titulo, year) |>
+  filter(n() > 1) |> 
+  summarise(as.data.frame(t(combn(autor, 2)))) |>
+  select(titulo, year, from=V1, to=V2)
+
+```
+::: {.notes}
+
+:::
+
+## Veamos un ejemplo
+
+``` {.r code-line-numbers="|1,2,3|5,6|8,9,10"}
+the_nodes <- blog_post %>% 
+  select(author) %>% 
+  unique()
+
+the_edges <- blog_post_net %>%
+  select(from, to, year)
+
+bp_net <- tbl_graph(nodes = the_nodes, 
+                    edges = the_edges, 
+                    directed = FALSE)
+
+```
+
+## Red completa de autores de blog 2013-2023 
+
+![](images/full_blog_post.png){fig-align="center"} 
+
+
+##  Podemos analizarlo anualmente 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/blog_post_2014.png){height="500" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](images/blog_post_2022.png){height="500" fig-align="center"}
+:::
+
+::::
+
+
+## O por idioma - artículos en español {.smaller}
+
+
+![](images/blog_español.png){height="600" fig-align="center"}
+## O por país {.smaller}
+
+![](images/countries.png){height="600" fig-align="center"}
+
+## ¿Y si queres hacer lo mismo para tu comunidad?
+
+
+![](images/leer.png){.r-stretch}
+
+
+## Mis consejos
+
+::: {.incremental}
+
+* Definir cuáles serán nodos en tu red (gente, países, organizaciones,...) 
+* Define que tipo(s) de conexiones tenes en tu red.
+    * Empieza con tus caminos para participar.
+    * Identifica que contribuciones se pueden hacer en equipos.
+* Probablemente ya estás registrando información sobre esos tipos de conexiones.
+
+:::
+
+## Mis consejos
+
+::: {.incremental}
+
+* Podes automatizar una parte de la recolección de datos.
+    * Formalize the workflow (codigo ;-)) para pdoer repetir y reproducir.
+* Es dificil capturar todos los tipos de interacciones.
+  * Tener en cuenta la privacidad de los datos. 
+* Conocer a los nodos ayuda a entender los clusters y las interacciones.
+  * Apoyate en las personas que han estado en la red por mas tiempo.
+
+:::
+
+## Mis consejos
+
+::: {.incremental}
+
+* Podes registrar el estado del modelo de la red en un momento dato ... 
+* ... asi podes compararlo en momentos diferentes.
+* ... asi podes usarlo para evaluar el impacto de intervenciones y programas.
+* Comparte lo que encontraste con tu comunidad
+* ... y con otras comunidades.
+
+:::
+
+
+## ¡Gracias, Thank you, Obrigada!{.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Slides: <>
+- GitHub: <>
+- Las figuras son adaptaciones de mi hijo pequeño y mias de [imágenes por Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) sobre el set [hand drawn style stickman](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
+- Usamos R, gephy, excalidraw y quarto para construir esta charla.
+- Gracias al equipo de rOpenSci Staff, Elio, Ale, Sandro y a mi Club de conversación en Inglés por su feedback.
+:::
+
+::: {.column width="40%"}
+![](images/hi-five.png)
+:::
+
+::::
+
