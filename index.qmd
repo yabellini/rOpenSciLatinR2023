@@ -8,7 +8,7 @@ format:
       buttons: false
     preview-links: auto
     logo: images/lettering_black.svg
-    footer: Esta charla está en <> 
+    footer: Esta charla está en <https://github.com/yabellini/rOpenSciLatinR2023> 
 ---
 
 ## Dos conceptos
@@ -363,10 +363,12 @@ bp_net <- tbl_graph(nodes = the_nodes,
 ::::
 
 
+
 ## O por idioma - artículos en español {.smaller}
 
 
 ![](images/blog_español.png){height="600" fig-align="center"}
+
 ## O por país {.smaller}
 
 ![](images/countries.png){height="600" fig-align="center"}
@@ -420,8 +422,8 @@ bp_net <- tbl_graph(nodes = the_nodes,
 :::: {.columns}
 
 ::: {.column width="60%"}
-- Slides: <>
-- GitHub: <>
+
+- GitHub: <https://github.com/yabellini/rOpenSciLatinR2023>
 - Las figuras son adaptaciones de mi hijo pequeño y mias de [imágenes por Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) sobre el set [hand drawn style stickman](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
 - Usamos R, gephy, excalidraw y quarto para construir esta charla.
 - Gracias al equipo de rOpenSci Staff, Elio, Ale, Sandro y a mi Club de conversación en Inglés por su feedback.
